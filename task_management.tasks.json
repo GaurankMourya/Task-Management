@@ -1,0 +1,81 @@
+[{
+  "_id": {
+    "$oid": "68bd5fe7078d01afd782a200"
+  },
+  "title": "Prepare Financial Report",
+  "description": "Compile Q2 financial results and create a summary report.",
+  "assignedBy": {
+    "$oid": "68bd5fe7078d01afd782a1fc"
+  },
+  "assignedTo": {
+    "$oid": "68bd5fe7078d01afd782a1fd"
+  },
+  "status": "PENDING",
+  "priority": "MEDIUM",
+  "dueDate": {
+    "$date": "2025-09-15T00:00:00.000Z"
+  },
+  "documents": [],
+  "comments": [],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-07T10:35:19.366Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-07T10:35:19.366Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68bd5fe7078d01afd782a201"
+  },
+  "title": "Update Company Website",
+  "description": "Fix bugs and update content on the company’s IT portal.",
+  "assignedBy": {
+    "$oid": "68bd5fe7078d01afd782a1fc"
+  },
+  "assignedTo": {
+    "$oid": "68bd5fe7078d01afd782a1fe"
+  },
+  "status": "IN_PROGRESS",
+  "priority": "MEDIUM",
+  "dueDate": {
+    "$date": "2025-09-20T00:00:00.000Z"
+  },
+  "documents": [],
+  "comments": [],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-07T10:35:19.366Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-07T10:35:19.366Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68be38e243feb05acf3e73bc"
+  },
+  "title": "Testing",
+  "description": "Test the current project",
+  "assignedBy": {
+    "$oid": "68bd5fe7078d01afd782a1fc"
+  },
+  "assignedTo": {
+    "$oid": "68bd5fe7078d01afd782a1fd"
+  },
+  "status": "PENDING",
+  "priority": "HIGH",
+  "dueDate": {
+    "$date": "2025-09-27T02:00:00.000Z"
+  },
+  "documents": [],
+  "comments": [],
+  "createdAt": {
+    "$date": "2025-09-08T02:01:06.247Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-08T02:01:06.247Z"
+  },
+  "__v": 0
+}]

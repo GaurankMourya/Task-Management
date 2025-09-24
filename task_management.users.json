@@ -1,0 +1,252 @@
+[{
+  "_id": {
+    "$oid": "68bd5fe7078d01afd782a1fc"
+  },
+  "employeeId": "ADM001",
+  "name": "Admin User",
+  "email": "admin@example.com",
+  "password": "$2a$10$6Q2TjVhlpJCn5XLfF4kOJO9VLHtMfDRZYZNiIhXAvH/O3l4Q9I1E2",
+  "role": "ADMIN",
+  "department": "Management",
+  "position": "System Admin",
+  "isAvailable": true,
+  "leaveStatus": "AVAILABLE",
+  "currentTask": null,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-07T10:35:19.345Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-07T10:35:19.345Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68bd5fe7078d01afd782a1fd"
+  },
+  "employeeId": "EMP001",
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "$2a$10$zM2qOpsd58GnBjT06C5TrORL7Zi7.mrJscFGxispLG0fNy14OEqPq",
+  "role": "EMPLOYEE",
+  "department": "Finance",
+  "position": "Accountant",
+  "isAvailable": true,
+  "leaveStatus": "AVAILABLE",
+  "currentTask": {
+    "$oid": "68be38e243feb05acf3e73bc"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-07T10:35:19.346Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-08T02:01:06.258Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68bd5fe7078d01afd782a1fe"
+  },
+  "employeeId": "EMP002",
+  "name": "Jane Smith",
+  "email": "jane@example.com",
+  "password": "$2a$10$VtzdZSskglLSlr.PR0mS2uSpcCgaIg5kSJ0BN0A2cTDnRecTsZ6w2",
+  "role": "EMPLOYEE",
+  "department": "IT",
+  "position": "Developer",
+  "isAvailable": true,
+  "leaveStatus": "AVAILABLE",
+  "currentTask": null,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-07T10:35:19.346Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-07T10:35:19.346Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68bd5fe7078d01afd782a1ff"
+  },
+  "employeeId": "EMP003",
+  "name": "Robert Brown",
+  "email": "robertbrown@example.com",
+  "password": "$2a$10$y6x.DQ7uDeVqtfjkj.z81OXtsGgLq7YYsoZ0CAYms0Uoa/tYnpQm6",
+  "role": "EMPLOYEE",
+  "department": "Finance",
+  "position": "Accountant",
+  "isAvailable": true,
+  "leaveStatus": "AVAILABLE",
+  "currentTask": "Prepare Q3 Report",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-07T11:10:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-07T11:10:00.000Z"
+  },
+  "plainPassword": "emp123"
+},
+{
+  "_id": {
+    "$oid": "68bd5fe7078d01afd782a200"
+  },
+  "employeeId": "EMP004",
+  "name": "Emily Davis",
+  "email": "emilydavis@example.com",
+  "password": "$2a$10$ccC13jF/U4FXd/1JgNkXP.5d6Yf09ZqURsyyE9WWCF5O/8E4ydugy",
+  "role": "EMPLOYEE",
+  "department": "Human Resources",
+  "position": "HR Manager",
+  "isAvailable": true,
+  "leaveStatus": "AVAILABLE",
+  "currentTask": "Conduct Interviews",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-07T11:15:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-07T11:15:00.000Z"
+  },
+  "plainPassword": "emp234"
+},
+{
+  "_id": {
+    "$oid": "68bd5fe7078d01afd782a201"
+  },
+  "employeeId": "EMP005",
+  "name": "Michael Johnson",
+  "email": "michaeljohnson@example.com",
+  "password": "$2a$10$jbR1Hbnk14Cy4unIu3zjruEd3a2HOeKZHyEmwz47f9QfNNlVm08FS",
+  "role": "EMPLOYEE",
+  "department": "Development",
+  "position": "Frontend Developer",
+  "isAvailable": false,
+  "leaveStatus": "ON_LEAVE",
+  "currentTask": null,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-07T11:20:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-07T11:20:00.000Z"
+  },
+  "plainPassword": "emp345"
+},
+{
+  "_id": {
+    "$oid": "68bd5fe7078d01afd782a202"
+  },
+  "employeeId": "EMP006",
+  "name": "Sophia Wilson",
+  "email": "sophiawilson@example.com",
+  "password": "$2a$10$NT5Hz/12NYX1q5I6IzI1jue1iDT/EoiP4LOo9YvhTgOE2kMRbDKw2",
+  "role": "EMPLOYEE",
+  "department": "Support",
+  "position": "Customer Support",
+  "isAvailable": true,
+  "leaveStatus": "AVAILABLE",
+  "currentTask": "Handle Client Queries",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-07T11:25:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-07T11:25:00.000Z"
+  },
+  "plainPassword": "emp456"
+},
+{
+  "_id": {
+    "$oid": "68bd5fe7078d01afd782a203"
+  },
+  "employeeId": "EMP007",
+  "name": "Daniel Martinez",
+  "email": "danielmartinez@example.com",
+  "password": "$2a$10$LoRxUn/ebKQAgANITpXcxOLmsuwP2grz4DjjpE9bdHrxdZ7rQlI/u",
+  "role": "EMPLOYEE",
+  "department": "IT",
+  "position": "Network Engineer",
+  "isAvailable": true,
+  "leaveStatus": "AVAILABLE",
+  "currentTask": "Maintain Server Logs",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-07T11:30:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-07T11:30:00.000Z"
+  },
+  "plainPassword": "emp567"
+},
+{
+  "_id": {
+    "$oid": "68bd5fe7078d01afd782a204"
+  },
+  "employeeId": "EMP008",
+  "name": "Olivia Taylor",
+  "email": "oliviataylor@example.com",
+  "password": "$2a$10$S8qPV0btawX.ylfC/.Lmy.DJf0vAj12F4On2Xn7QJub2UfaV3XwHK",
+  "role": "EMPLOYEE",
+  "department": "Research",
+  "position": "Data Analyst",
+  "isAvailable": true,
+  "leaveStatus": "AVAILABLE",
+  "currentTask": "Analyze Market Trends",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-07T11:35:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-07T11:35:00.000Z"
+  },
+  "plainPassword": "emp678"
+},
+{
+  "_id": {
+    "$oid": "68bd5fe7078d01afd782a205"
+  },
+  "employeeId": "EMP009",
+  "name": "Liam White",
+  "email": "liamwhite@example.com",
+  "password": "$2a$10$VcdsvXXNOUhAzF9Mo8P6Ee.YPB.2Y.zPCKY7DyVrj9/tcrB31Afz6",
+  "role": "EMPLOYEE",
+  "department": "Development",
+  "position": "Backend Developer",
+  "isAvailable": false,
+  "leaveStatus": "ON_LEAVE",
+  "currentTask": null,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-07T11:40:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-07T11:40:00.000Z"
+  },
+  "plainPassword": "emp789"
+},
+{
+  "_id": {
+    "$oid": "68bd5fe7078d01afd782a206"
+  },
+  "employeeId": "EMP010",
+  "name": "Ava Thomas",
+  "email": "avathomas@example.com",
+  "password": "$2a$10$XibRDeAJRfQn94HKUN1dnONHZ3y0ytvSDTlfk3pqXWw3m23FWVtwW",
+  "role": "EMPLOYEE",
+  "department": "Design",
+  "position": "UI/UX Designer",
+  "isAvailable": true,
+  "leaveStatus": "AVAILABLE",
+  "currentTask": "Design Dashboard UI",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-09-07T11:45:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-07T11:45:00.000Z"
+  },
+  "plainPassword": "emp890"
+}]
