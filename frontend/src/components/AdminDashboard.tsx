@@ -240,6 +240,7 @@ const AdminDashboard: React.FC = () => {
                   <th style={{ padding: '0.75rem', textAlign: 'left', border: '1px solid #dee2e6' }}>Assigned To</th>
                   <th style={{ padding: '0.75rem', textAlign: 'left', border: '1px solid #dee2e6' }}>Status</th>
                   <th style={{ padding: '0.75rem', textAlign: 'left', border: '1px solid #dee2e6' }}>Due Date</th>
+                  <th style={{ padding: '0.75rem', textAlign: 'left', border: '1px solid #dee2e6' }}>Priority</th>
                 </tr>
               </thead>
               <tbody>
@@ -264,6 +265,9 @@ const AdminDashboard: React.FC = () => {
                     </td>
                     <td style={{ padding: '0.75rem', border: '1px solid #dee2e6' }}>
                       {new Date(task.dueDate).toLocaleDateString()}
+                    </td>
+                    <td style={{ padding: '0.75rem', border: '1px solid #dee2e6' }}>
+                      {task.priority}
                     </td>
                   </tr>
                 ))}

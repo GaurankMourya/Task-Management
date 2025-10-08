@@ -134,21 +134,34 @@ router.post('/', [auth, adminAuth], [
         // Check if employee already has a current task
         if (employee.currentTask) {
             const oldCurrentTask = await Task.findById(employee.currentTask);
-            // Allow assignment if the new task has HIGH or URGENT priority
-            if (priority === 'HIGH' || priority === 'URGENT') {
+            const oldPriority = oldCurrentTask ? oldCurrentTask.priority : 'MEDIUM';
+
+            const isNewTaskHighPriority = ['HIGH', 'URGENT'].includes(priority);
+            const isOldTaskHighPriority = ['HIGH', 'URGENT'].includes(oldPriority);
+
+            // Block if the employee already has a high-priority task.
+            if (isOldTaskHighPriority) {
+                return res.status(400).json({
+                    message: `Employee already has a high-priority task. Cannot assign another task.`,
+                    currentTask: employee.currentTask,
+                    currentTaskPriority: oldPriority
+                });
+            }
+
+            // Allow a high-priority task to override a lower-priority one.
+            if (isNewTaskHighPriority && !isOldTaskHighPriority) {
                 // If a high-priority task is assigned, move the old task back to PENDING
                 if (oldCurrentTask && oldCurrentTask.status === 'IN_PROGRESS') {
                     oldCurrentTask.status = 'PENDING'; // Re-queue the old task
                     await oldCurrentTask.save();
                     console.log(`Old task ${oldCurrentTask._id} for employee ${employee.employeeId} set to PENDING due to higher priority assignment.`);
                 }
-                // Continue with task creation.
             } else {
-                // If new task is LOW or MEDIUM priority, block assignment
+                // Block if the new task does not have a higher priority.
                 return res.status(400).json({
-                    message: `Employee already has an active task (${employee.currentTask}). Cannot assign a ${priority.toLowerCase()} priority task.`,
+                    message: `Employee already has an active task. A new task can only be assigned if it has a higher priority.`,
                     currentTask: employee.currentTask,
-                    currentTaskPriority: oldCurrentTask ? oldCurrentTask.priority : 'UNKNOWN'
+                    currentTaskPriority: oldPriority
                 });
             }
         }
